@@ -12,14 +12,14 @@ browser = webdriver.Chrome()
 browser.get('http://www.gmail.com')
 
 emailElem = browser.find_element_by_css_selector("#identifierId")
-emailElem.send_keys('vedant190499@gmail.com')
+emailElem.send_keys('<SENDERS EMAIL>')
 emailElem.submit()
 signinBtn = browser.find_element_by_css_selector('#identifierNext')
 signinBtn.click()
 time.sleep(2)
 
 passwordElem = browser.find_element_by_name('password')
-passwordElem.send_keys('vedantemailer')
+passwordElem.send_keys('<PASSWORD>')
 passwordElem.submit()
 finalsigninBtn = browser.find_element_by_css_selector('#passwordNext')
 finalsigninBtn.click()
@@ -33,7 +33,7 @@ composeElem.click()
 time.sleep(7)
 
 toElem = browser.find_element_by_name("to")
-toElem.send_keys('vedantsakhardande@gmail.com')
+toElem.send_keys('<RECEIVERS EMAIL')
 
 time.sleep(2)
 
